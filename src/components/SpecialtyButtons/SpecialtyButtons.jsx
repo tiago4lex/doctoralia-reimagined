@@ -6,7 +6,9 @@ const specialties = [
     'Ortopedista', 'Endocrinologista', 'Psiquiatra', 'Neurologista', 'Urologista',
     'Gastroenterologista', 'Otorrinolaringologista', 'Reumatologista', 'Oncologista',
     'Pneumologista', 'Infectologista', 'Cirurgião Geral', 'Cirurgião Plástico', 'Cirurgião Cardiovascular',
-    'Cirurgião Oncológico', 'Cirurgião Torácico', 'Cirurgião Vascular', 'Cirurgião Pediátrico'
+    'Cirurgião Oncológico', 'Cirurgião Torácico', 'Cirurgião Vascular', 'Cirurgião Pediátrico', 'Cirurgião Colorectal',
+    'Cirurgião Maxilofacial', 'Cirurgião de Cabeça e Pescoço', 'Cirurgião de Mão', 'Cirurgião de Trauma', 'Cirurgião de Queimaduras',
+    'Cirurgião de Emergência', 'Cirurgião de Transplante', 'Cirurgião de Reconstrução', 'Cirurgião de Endoscopia', 'Cirurgião de Laparoscopia',
 ];
 
 function SpecialtyButtons() {
