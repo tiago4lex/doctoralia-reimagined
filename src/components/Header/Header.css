@@ -7,7 +7,21 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-img {
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+    height: 40px;
+    widht: auto;
+}
+
+.logo-text {
     color: #fff;
     font-size: 2rem;
     font-weight: bold;
@@ -17,6 +31,7 @@
 .main-nav {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .nav-button {
@@ -27,6 +42,9 @@
     color: #00C3A5;
     cursor: pointer;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,10 +54,26 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.nav-button.orelha {
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.orelha-icon {
+    font-size: 1.5rem;
+    display: flex;
+}
+
 .nav-button:hover {
     background: #01887A;
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
     transition: background 0.3s ease, color 0.3s ease;
 }
 
