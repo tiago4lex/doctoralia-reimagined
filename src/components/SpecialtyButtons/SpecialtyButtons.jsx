@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./SpecialtyButtons.css";
 
 const specialties = [
@@ -6,11 +7,16 @@ const specialties = [
     'Gastroenterologista', 'Otorrinolaringologista', 'Reumatologista', 'Oncologista',
     'Pneumologista', 'Infectologista', 'Cirurgião Geral', 'Cirurgião Plástico', 'Cirurgião Cardiovascular',
     'Cirurgião Oncológico', 'Cirurgião Torácico', 'Cirurgião Vascular', 'Cirurgião Pediátrico'
-]
+];
 
 function SpecialtyButtons() {
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        setLoaded(true);
+    }, []);
     return (
-        <div className="specialty-buttons-container">
+        <div className={`specialty-buttons-container ${loaded ? "loaded" : ""}`}>
             {specialties.map((specialty, index) => (
                 <button
                     key={index}
