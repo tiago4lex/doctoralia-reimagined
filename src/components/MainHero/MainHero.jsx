@@ -8,7 +8,7 @@ function MainHero() {
 
   const features = [
     { icon: <HiUserGroup />, title: "ENCONTRE ESPECIALISTAS" },
-    { icon: <FaCalendarAlt />, title: "MARQUE CONSULTAS" },
+    // { icon: <FaCalendarAlt />, title: "MARQUE CONSULTAS" },
     { icon: <FaUser />, title: "ACESSAR PERFIL" },
     { icon: <FaStar />, title: "AVALIE O SERVIÇO" },
   ];
@@ -18,9 +18,9 @@ function MainHero() {
       case "ENCONTRE ESPECIALISTAS":
         navigate("/especialistas");
         break;
-      case "MARQUE CONSULTAS":
-        navigate("/consultas");
-        break;
+      // case "MARQUE CONSULTAS":
+      //   navigate("/consultas");
+      //   break;
       case "ACESSAR PERFIL":
         navigate("/perfil");
         break;
