@@ -1,0 +1,38 @@
+.search-results-page {
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .search-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-header h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .results-container {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .doctor-section {
+    flex: 0 0 350px; /* Largura fixa para o card do médico */
+  }
+  
+  .calendar-section {
+    flex: 1; /* Ocupa o restante do espaço */
+  }
+  
+  @media (max-width: 768px) {
+    .results-container {
+      flex-direction: column;
+    }
+    
+    .doctor-section {
+      flex: 1;
+      width: 100%;
+    }
+  }

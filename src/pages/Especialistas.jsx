@@ -1,4 +1,12 @@
-function Especialistas() {
+import { useState } from "react";
+import DoctorCard from "../components/DoctorCard/DoctorCard";
+import AvailabilityCalendar from "../components/AvailabilityCalendar/AvailabilityCalendar";
+import FilterSidebar from "../components/FilterSidebar/FilterSidebar";
+import "./Especialistas.css";
+
+function SearchResults() {
+  const [activeTab, setActiveTab] = useState("PERFIL");
+
   const doctorData = {
     name: "Maria Angelina",
     specialty: "Psicóloga",
@@ -13,20 +21,27 @@ function Especialistas() {
   const availability = [
     { day: "QUARTA", date: 1, available: true },
     { day: "SEGUNDA", date: 6, available: false },
-    // ... outros dias
     { day: "SEGUNDA", date: 20, available: true },
     { day: "SEGUNDA", date: 27, available: false },
   ];
 
   return (
-    <div className="search-resultes-page">
-      <h1>Psicólogo, Curitiba</h1>
+    <div className="search-results-page">
+      <header className="search-header">
+        <h1>Psicólogo, Curitiba</h1>
+        <FilterSidebar />
+      </header>
 
-      <div className="search-results-container">
-        <FilterSidebad />
+      <div className="results-container">
+        <div className="doctor-section">
+          <DoctorCard
+            doctor={doctorData}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+        </div>
 
-        <div className="results-content">
-          <DoctorCard doctor={doctorData} />
+        <div className="calendar-section">
           <AvailabilityCalendar availability={availability} />
         </div>
       </div>
@@ -34,4 +49,4 @@ function Especialistas() {
   );
 }
 
-export default Especialistas;
+export default SearchResults;

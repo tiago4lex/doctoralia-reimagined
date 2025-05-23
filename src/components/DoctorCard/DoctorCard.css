@@ -3,67 +3,85 @@
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
+  width: 350px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.doctor-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.doctor-header h2 {
-  margin: 0;
-  color: #2c3e50;
-}
-
-.doctor-rating {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.star-filled {
-  color: #ffd700;
-}
-
-.star-empty {
-  color: #e0e0e0;
-}
-
-.doctor-specialty h3 {
+/* Seção de Especialidade */
+.doctor-specialty h2 {
+  color: #00b4d8;
+  font-size: 1.2rem;
   margin: 0 0 0.3rem 0;
-  color: #00b4d8;
-}
-
-.doctor-expertise {
-  color: #666;
-  font-style: italic;
-  margin: 1rem 0;
-}
-
-.doctor-address {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #555;
-  margin: 1rem 0;
-}
-
-.teleconsultation-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #00b4d8;
-  margin: 1rem 0;
   font-weight: 600;
 }
 
+.registry {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.expertise {
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.expertise-details {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Nome e Avaliação */
+.doctor-name-rating h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.star-filled {
+  color: #FFD700;
+  font-size: 1rem;
+}
+
+.rating span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Endereço */
+.doctor-address {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.address-icon {
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.doctor-address p {
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Abas Superiores */
 .doctor-tabs {
   display: flex;
   border-bottom: 1px solid #e0e0e0;
-  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .doctor-tabs button {
@@ -72,10 +90,38 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   color: #666;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .doctor-tabs .tab-active {
   color: #00b4d8;
   border-bottom: 2px solid #00b4d8;
+}
+
+/* Divisor */
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 0.5rem 0;
+}
+
+/* Abas Inferiores */
+.bottom-tabs {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.bottom-tabs button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #666;
   font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.bottom-tabs .map-tab {
+  color: #00b4d8;
 }
