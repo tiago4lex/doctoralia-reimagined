@@ -1,5 +1,4 @@
 function Especialistas() {
-
   const doctorData = {
     name: "Maria Angelina",
     specialty: "Psicóloga",
@@ -11,7 +10,6 @@ function Especialistas() {
     acceptsTeleconsultation: true,
   };
 
-  
   const availability = [
     { day: "QUARTA", date: 1, available: true },
     { day: "SEGUNDA", date: 6, available: false },
@@ -19,7 +17,6 @@ function Especialistas() {
     { day: "SEGUNDA", date: 20, available: true },
     { day: "SEGUNDA", date: 27, available: false },
   ];
-
 
   return (
     <div className="search-resultes-page">
