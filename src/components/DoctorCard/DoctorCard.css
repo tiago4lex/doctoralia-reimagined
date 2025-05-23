@@ -1,3 +1,22 @@
+.doctor-profile-section {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00b4d8;
+}
+
+.doctor-specialty {
+  flex: 1;
+}
+
 .doctor-card {
   background: white;
   border-radius: 10px;
@@ -7,7 +26,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Seção de Especialidade */
 .doctor-specialty h2 {
   color: #00b4d8;
   font-size: 1.2rem;
@@ -31,9 +49,8 @@
   color: #666;
   font-size: 0.9rem;
   font-style: italic;
-  margin: 0 0 1.5rem 0;
+  margin: 0;
 }
-
 /* Nome e Avaliação */
 .doctor-name-rating h3 {
   color: #2c3e50;
@@ -133,4 +150,11 @@
   object-fit: scale-down;
   margin-bottom: 1rem;
   border: 3px solid #00b4d8;
+}
+
+@media (max-width: 480px) {
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
 }
