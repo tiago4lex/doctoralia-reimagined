@@ -10,7 +10,7 @@
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #00b4d8;
+  border: 3px solid #00c3a5;
 }
 
 .doctor-specialty {
@@ -27,7 +27,7 @@
 }
 
 .doctor-specialty h2 {
-  color: #00b4d8;
+  color: #00c3a5;
   font-size: 1.2rem;
   margin: 0 0 0.3rem 0;
   font-weight: 600;
@@ -112,8 +112,8 @@
 }
 
 .doctor-tabs .tab-active {
-  color: #00b4d8;
-  border-bottom: 2px solid #00b4d8;
+  color: #00c3a5;
+  border-bottom: 2px solid #00c3a5;
 }
 
 /* Divisor */
@@ -140,7 +140,7 @@
 }
 
 .bottom-tabs .map-tab {
-  color: #00b4d8;
+  color: #00c3a5;
 }
 
 .profile-picture {
@@ -149,7 +149,7 @@
   border-radius: 50%;
   object-fit: scale-down;
   margin-bottom: 1rem;
-  border: 3px solid #00b4d8;
+  border: 3px solid #00c3a5;
 }
 
 @media (max-width: 480px) {
