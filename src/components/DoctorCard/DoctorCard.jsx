@@ -1,13 +1,18 @@
 import { FaStar, FaMapMarkerAlt } from "react-icons/fa";
 import "./DoctorCard.css";
 
-function DoctorCard({ doctor }) {
+function DoctorCard() {
   return (
     <div className="doctor-card">
       {/* Seção Superior */}
       <div className="doctor-specialty">
         <h2>Psicóloga</h2>
         <p className="registry">CRP PR-34215</p>
+        <img
+          className="profile-picture"
+          src="src\components\DoctorCard\medica.jpg"
+          alt="medica"
+        />
         <p className="expertise">Especialista em...</p>
         <p className="expertise-details">
           (Terapia cognitivo comportamental, Terapia do esquema)
